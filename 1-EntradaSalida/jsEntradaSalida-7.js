@@ -16,8 +16,6 @@ function sumar()
 	suma=num1+num2;
 
 	alert("la suma es "+suma);
-
-
 }
 
 function restar()
