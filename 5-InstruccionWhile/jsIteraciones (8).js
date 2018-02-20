@@ -5,23 +5,20 @@ function Mostrar()
 	var positivo=0;
 	var negativo=1;
 	var numero;
-	var acumulador=0;
-
-	
 	var respuesta='si';
 
 	while(respuesta=="si"){
 
 		numero=parseInt(prompt("ingresar numero"));
-		acumulador=acumulador+numero;
-		contador=contador+1;
-
 		respuesta=prompt("continuar?");
-
+		
 	
 	if (numero>0){
-		contador++;
+		positivo=positivo+numero;
 		
+	}
+	else{
+		negativo=negativo*numero;
 	}
 	}
 
