@@ -4,27 +4,34 @@ function Mostrar()
 	var contador=0;
 	var numero;
 	var maximo=0;
-	var minimo=0
+	var minimo=0;
 	// declarar variables
 	
 	var respuesta='si';
 
 	while(respuesta!='no')
-	{
+
+	{	
+		
 		numero=parseInt(prompt("ingrese un numero"));
-		respuesta=prompt("continuar?");
+		
 		contador ++;
+		
 		
       if(contador == 1) {
          maximo = numero;
          minimo = numero;
+      }else{
+      	if(maximo<numero){
+      		maximo=numero;
+      	}else{
+      		if(minimo>numero){
+      			minimo=numero;
+      		}
+      	}
       } 
-      if (numero>maximo) {
-      		numero=maximo
-      }
-      if (numero<minimo) {
-      	numero=minimo
-      }
+		      
+      respuesta=prompt("continuar?");
 
      
 		
