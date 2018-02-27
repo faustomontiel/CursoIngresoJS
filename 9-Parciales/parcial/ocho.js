@@ -21,6 +21,8 @@ function Mostrar()
 	var sumaEdad=0;
 	var promedioEdad;
 	var contarEdad=0;
+	var contPar=0;
+	var contarImpar=0;
 		
 
 	while(seguir!="no"){
@@ -78,6 +80,14 @@ function Mostrar()
 		sumaEdad=sumaEdad+edad;
 	}
 	
+	if(nota%2==0){
+		contPar=contPar+1;
+	}else{
+		if(nota%2==1){
+			contarImpar=contarImpar+1;
+		}
+	}
+	
 	}
 			promedio=acumulador/cantidadDeAlumnos;
 
@@ -94,6 +104,8 @@ function Mostrar()
 	document.write("<br> el promedio de la nota de mujeres es "+promedioMujeres);
 	document.write("<br> el sexo del menor es  "+sexo);
 	document.write("<br> el promedio de edad de los aprobados es  "+promedioEdad);
+	document.write("<br> la cantidad de numeros pares es  "+contPar);
+	document.write("<br> la cantidad de numeros impares es  "+contarImpar);
 
 	}
 	

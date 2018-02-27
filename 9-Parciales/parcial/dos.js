@@ -1,14 +1,17 @@
 function Mostrar()
-{
+{ 
 	 var importe;
 	 var importeFinal;
+	 var descuento;
 
-	 importe=prompt("ingrese importe");
-	 importe=parseInt(importe);
+	 importe=parseInt(prompt("ingrese precio"));
+	 descuento=parseInt(prompt("ingrse el descuento"));
 
-	 importeFinal=importe*1.21;
+	 
+
+	 descuento=(importe*descuento)/100;
+	 importeFinal=importe-descuento;
 
 	 document.getElementById('importeFinal').value=importeFinal;
-
 
 }
