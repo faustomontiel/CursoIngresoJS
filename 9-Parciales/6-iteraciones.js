@@ -1,24 +1,26 @@
+//Debemos lograr mostrar un mensaje al presionar el botón  'MOSTRAR'.
 function Mostrar()
 {
 	var contador=0;
 	var numero;
 	var maximo=0;
 	var minimo=0;
-	var acumulador=0;
+
 	
 
 	while(contador<7)
 	{
 		numero=parseInt(prompt("Ingrese numeros ventas de 7 dias habiles"));
 		contador++;
-		acumulador=acumulador+numero;
+		
 		
 
 		if(contador==1){
-			numero=maximo;
+			maximo=numero;
+			minimo=numero;
 		} else{
 			if(maximo<numero){
-				numero=maximo;
+				maximo=numero;
 			}else{
 				if(minimo>numero){
 					minimo=numero;
@@ -28,7 +30,9 @@ function Mostrar()
 
 }
 
-		document.write("el importe mayor fue"+maximo);
-		document.write("el importe minimo fue"+minimo);
+		document.write("<br>el importe mayor fue"+maximo);
+		document.write("<br>el importe minimo fue"+minimo);
 
+	
 }
+

@@ -1,16 +1,14 @@
 function Mostrar()
 {
+
 	var contador=0;
 	var numero;
+	var acumulador=0;
 	var maximo=0;
 	var minimo=0;
-	var acumulador=0;
-	
-
-	while(contador<7)
-	{
-		numero=parseInt(prompt("Ingrese numeros ventas de 7 dias habiles"));
+	while(contador<7){
 		contador++;
+		numero=parseInt(prompt("Ingrese numeros ventas de 7 dias habiles"));
 		acumulador=acumulador+numero;
 		
 
@@ -21,14 +19,14 @@ function Mostrar()
 				numero=maximo;
 			}else{
 				if(minimo>numero){
-					minimo=numero;
+					minimo>numero;
 				}
 			}
 		}
 
-}
 
 		document.write("el importe mayor fue"+maximo);
 		document.write("el importe minimo fue"+minimo);
+
 
 }
